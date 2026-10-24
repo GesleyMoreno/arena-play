@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ArenaPlay | Demo de site esportivo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#">Arena<b>Play</b></a>
+    <nav id="tabs" aria-label="Esportes">
+      <button class="tab on" data-s="todos">Todos</button>
+      <button class="tab" data-s="futebol">Futebol</button>
+      <button class="tab" data-s="basquete">Basquete</button>
+      <button class="tab" data-s="tenis">Tênis</button>
+      <button class="tab live-tab" data-s="ao-vivo">Ao vivo</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap layout">
+  <section>
+    <div class="promo">
+      <h1>Rodada de sábado</h1>
+      <p>Monte seu bilhete com os jogos de hoje. Todas as odds são fictícias.</p>
+    </div>
+    <h2 id="titulo">Todos os jogos</h2>
+    <div id="lista" class="lista"></div>
+  </section>
+
+  <aside id="slip" class="slip" aria-label="Bilhete">
+    <h2>Bilhete <span id="qtd">0</span></h2>
+    <div id="itens"><p class="vazio">Toque em uma odd para adicionar ao bilhete.</p></div>
+    <div class="calc">
+      <label>Valor (crédito fictício)
+        <input id="valor" type="number" min="1" value="10">
+      </label>
+      <div class="linha"><span>Odd total</span><b id="odd">0,00</b></div>
+      <div class="linha"><span>Retorno possível</span><b id="ret">R$ 0,00</b></div>
+      <button id="fim" class="btn" disabled>Finalizar (demo)</button>
+      <button id="limpar" class="link">Limpar bilhete</button>
+      <p id="msg" class="msg" role="status"></p>
+    </div>
+  </aside>
+</main>
+
+<a href="#slip" class="fab" id="fab">Bilhete (<span id="qtd2">0</span>)</a>
+
+<footer>
+  <div class="wrap">
+    <p><strong>+18.</strong> Projeto conceitual para portfólio. Não há apostas reais, pagamentos nem cadastro. Marca e odds fictícias.</p>
+    <p>Jogo responsável: apostar pode causar dependência. Se precisar de ajuda, procure um serviço de saúde.</p>
+    <p>Desenvolvido por Gesley Moreno da Silva.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
